@@ -1,0 +1,76 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../StyleSheet/Principal.css" rel="stylesheet" type="text/css" />
+
+    <title>Home SCM</title>
+</head>
+
+<body>
+    <header>
+        <div class="Tools-Bar">
+
+        </div>
+    </header>
+
+    <div class="Panel-Pincipal-menu">
+        <nav class="Menu-Principal">
+            <ul class="Menu">
+                <li id="uno"><a href="#">Inicio</li>
+                <li id="dos"><a href="#">Chat</li>
+                <li id="tres"><a href="#">Equipos</li>
+                <li id="cuatro"><a href="#">Calendario</li>
+                <li id="cinco"><a href="#">Archivos</li>
+            
+            </ul>
+       </nav>
+        <nav id="Login-Menu" class="Menu-Principal-session">
+            <ul class="Menu-session">
+                <li id="uno-session" onclick="ShowSubmenu()" ><a href="#"  >JC</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="Panel-Principal-Modular">
+        <form id="searchform">
+            <input id="Buscar" type="text" placeholder="Buscar aqu&iacute;..." required>
+            <button  type="submit">Buscar</button>
+         </form>
+        <p/>
+        <hr>
+        <div class="trdinamica" id="Tabla-Registros-Dinamicos">
+        </div>
+    </div>
+    <div class="Panel-Principal-contenido">
+
+    </div>
+    <div id="sub-m-p-s" class="sub-menu-principal-session">
+        <div class="Login-Submenu">
+            <h4>JC</h4>
+        </div>
+        <div class="Login-Submenu-Name">
+            Javier Andres Carranza Barragan
+        </div>
+        <nav>
+            <ul class="sub-menu-session">
+                <li><a href="#">Disponible</a></li>
+                <li><a href="#">Cambiar imagen</a></li>
+                <li><a href="#">Notificaciones</a></li>
+                <li><a href="#">Idioma</a></li>
+                <li><a href="#">Descargar la app móvil</a></li>
+                <li><a href="../Login/Login.html">Cerrar sesíon</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <div class="Footer-Bar">
+            <div class="Footer-Reference">
+                2017 - Vellux ∞ Cloud ∞ Administrator &reg;
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../30.Services/30.1.Controladores/Home/Home.js">
+    </script>
+</body>

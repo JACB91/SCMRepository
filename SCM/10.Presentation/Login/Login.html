@@ -1,0 +1,79 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../StyleSheet/Principal.css" rel="stylesheet" type="text/css" />
+    <title>Home SCM</title>
+</head>
+
+<body>
+
+    <div id="Login-form-Loader" class="Panel-Pincipal-Login">
+        <div id="wrapper">
+            <p id="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
+        </div>
+
+        <div class="Logo-inicio">
+            <img src="../Images/logoVCnew.png">
+        </div>
+        <div class="Texto-carga">
+            <p id="Text-Load"><span>Cargando VelluxCloud Administrator...</span></p>
+        </div>
+
+    </div>
+    <div id="Login-form" class="Panel-Pincipal-Login-form">
+        <div id="wrapper-login">
+            <p id="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
+        </div>
+
+        <div class="Logo-inicio-login">
+            <img src="../Images/logoVCnew.png">
+        </div>
+        <div class="Contenedor-Login">
+
+            <form>
+                <div class="form-input">
+                    <input type="text" name="username" placeholder="Ingrese Usuario">
+                </div>
+                <div class="form-input">
+                    <input type="password" name="password" placeholder="Ingrese Password">
+                </div>
+                <div class="form-input-button">
+                    <input class="botones" type="button" onclick="ValidateLogin()" name="Ingresar" value="Ingresar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="Footer-Bar">
+            <div class="Footer-Reference">
+                2017 - Vellux ∞ Cloud ∞ Administrator &reg;
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        window.onload = show_Loader();
+        window.setTimeout(show_Login, 5000);
+
+        function show_Loader() {
+            element = document.getElementById("Login-form");
+            element.style.display = 'none';
+            element = document.getElementById("Login-form-Loader");
+            element.style.display = 'block';
+        }
+
+        function show_Login() {
+            element = document.getElementById("Login-form");
+            element.style.display = 'block';
+            element = document.getElementById("Login-form-Loader");
+            element.style.display = 'none';
+        }
+
+        function ValidateLogin() {
+            debugger;
+            window.location = "../Home/Index.html"
+
+        }
+    </script>
+</body>

@@ -1,0 +1,19 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "Solución Service Cloud Management Administrator.",
+    "main": "App",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Javier Andrés Carranza Barragá",
+    "license": "MIT",
+    "dependencies": {
+        "socket.io": "*",
+        "express": "*",
+        "http": "*",
+        "https": "*",
+        "http-get": "*",
+        "http-post": "*"
+    }
+}
